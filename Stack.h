@@ -55,8 +55,6 @@ public:
             return data[--index];
         }
     }
-
-
 };
 
 
