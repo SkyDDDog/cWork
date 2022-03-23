@@ -4,20 +4,16 @@
 using namespace std;
 
 int main() {
-
-    int n;
-    cin >> n;
-    Stack<int> stack(n);
-    for (int i = 0; i < n; ++i) {
+    Stack stack;
+    for (int i = 0; i < MAX_BUF; ++i) {
         int tmp;
         cin >> tmp;
         stack.push(tmp);
     }
 
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < MAX_BUF; ++i) {
         cout << stack.top() << " " << stack.pop() << endl;
     }
 
-//    std::cout << "Hello, World!" << std::endl;
     return 0;
 }

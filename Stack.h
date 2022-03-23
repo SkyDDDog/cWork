@@ -1,61 +1,26 @@
 //
-// Created by 天狗 on 2022/3/22.
+// Created by 222100209_李炎东 on 2022/3/23.
 //
 
-#ifndef STACK_STACK_H
-#define STACK_STACK_H
+#ifndef CPP_TEST_STACK_H
+#define CPP_TEST_STACK_H
 
+const int MAX_BUF = 50;
 
-template<class T>class Stack {
+class Stack {
 private:
-    T* data;
+    int data[MAX_BUF];
     int size;
     int index;
 public:
-    Stack(int maxSize = 10) {
-        data = new T[size = maxSize];
-        index = 0;
-    }
-    ~Stack() {
-        delete[] data;
-    }
-
-    bool isFull() {
-        if (index >= size) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    bool isBlank() {
-        if (index == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    T top() {
-        return data[index-1];
-    }
-
-    bool push(T x) {
-        if (isFull()) {
-            return false;
-        } else {
-            data[index++] = x;
-            return true;
-        }
-    }
-
-    int pop() {
-        if (isBlank()) {
-            return -1;
-        } else {
-            return data[--index];
-        }
-    }
+    Stack();
+    ~Stack();
+    bool isFull() const;
+    bool isBlank() const;
+    int top();
+    bool push(int x);
+    int pop();
 };
 
 
-#endif //STACK_STACK_H
+#endif //CPP_TEST_STACK_H
