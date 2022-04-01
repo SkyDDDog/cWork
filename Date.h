@@ -5,7 +5,6 @@
 
 #ifndef DATECLASS_DATE_H
 #define DATECLASS_DATE_H
-
 #include <iostream>
 
 using namespace std;
