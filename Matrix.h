@@ -4,7 +4,6 @@
 
 #ifndef MATRIXCLASS_MATRIX_H
 #define MATRIXCLASS_MATRIX_H
-
 #include <iostream>
 
 using namespace std;

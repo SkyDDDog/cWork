@@ -3,7 +3,6 @@
 //
 
 #include "Matrix.h"
-
 Matrix::Matrix(int r, int c) : row(r), col(c) {
     matrix = new int*[r];
     for (int i = 0; i < r; ++i) {

@@ -1,6 +1,5 @@
 #include "Matrix.h"
 
-
 int main() {
     Matrix m1(3,3);
     cin >> m1;
