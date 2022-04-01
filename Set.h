@@ -6,7 +6,6 @@
 #define SETCLASS_SET_H
 #include <iostream>
 
-
 class Set {
 private:
     int data;

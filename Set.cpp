@@ -73,6 +73,3 @@ void Set::setData(int data) {
 Set *Set::getNext() const {
     return next;
 }
-
-
-
